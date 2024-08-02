@@ -11,8 +11,20 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
 import Slider from "react-slick";
+import c1 from "../images/c1.jpg"
+import c2 from "../images/c2.jpg"
+import c3 from "../images/c3.jpg"
+import c4 from "../images/c4.jpg"
+import c5 from "../images/c5.jpg"
+import c6 from "../images/c6.jpg"
+import c7 from "../images/c7.jpg"
+import c8 from "../images/c8.png"
+import f1 from "../images/f1.jpg"
+import f2 from "../images/f2.jpg"
+import f3 from "../images/f3.jpg"
+import f4 from "../images/f4.jpg"
+import line1 from "../images/line.png"
 
 
 
@@ -116,7 +128,7 @@ function Landingpage() {
             <div className="row py-3">
               <div className="col-md-3 my-3">
                 <Card style={{ width: '100%',backgroundColor:"whitesmoke" }}>
-                  <Card.Img variant="top" src='../images/c1.jpg' />
+                  <Card.Img variant="top" src={c1} />
                   <Card.Body>
                     <Card.Text className='text-light fw-bolder text-center'>
                       INTERNATIONAL BURDER..
@@ -126,7 +138,7 @@ function Landingpage() {
               </div>
               <div className="col-md-3 my-3">
                 <Card style={{ width: '100%',backgroundColor:"whitesmoke" }}>
-                  <Card.Img variant="top" src='../images/c2.jpg' />
+                  <Card.Img variant="top" src={c2} />
                   <Card.Body>
                     <Card.Text className='text-light fw-bolder text-center'>
                       KFC LUNCH SPECIALS
@@ -136,7 +148,7 @@ function Landingpage() {
               </div>
               <div className="col-md-3 my-3">
                 <Card style={{ width: '100%',backgroundColor:"whitesmoke" }}>
-                  <Card.Img variant="top" src='../images/c3.jpg' />
+                  <Card.Img variant="top" src={c3} />
                   <Card.Body>
                     <Card.Text className='text-light fw-bolder text-center'>
                       BOX MEALS
@@ -146,7 +158,7 @@ function Landingpage() {
               </div>
               <div className="col-md-3 my-3">
                 <Card style={{ width: '100%',backgroundColor:"whitesmoke" }}>
-                  <Card.Img variant="top" src='../images/c4.jpg' />
+                  <Card.Img variant="top" src={c4} />
                   <Card.Body>
                    <Card.Text className='text-light fw-bolder text-center'>
                       BURGERS
@@ -158,7 +170,7 @@ function Landingpage() {
             <div className="row py-md-3 my-md-3">
               <div className="col-md-3 my-3">
                 <Card style={{ width: '100%',backgroundColor:"whitesmoke" }}>
-                  <Card.Img variant="top" src='../images/c5.jpg' />
+                  <Card.Img variant="top" src={c5} />
                   <Card.Body>
                     <Card.Text className='text-light fw-bolder text-center'>
                       CHICKEN BUCKETS
@@ -168,7 +180,7 @@ function Landingpage() {
               </div>
               <div className="col-md-3 my-3">
                 <Card style={{ width: '100%',backgroundColor:"whitesmoke" }}>
-                  <Card.Img variant="top" src='../images/c6.jpg' />
+                  <Card.Img variant="top" src={c6} />
                   <Card.Body>
                     <Card.Text className='text-light fw-bolder text-center'>
                       RICE BOWLZ
@@ -178,7 +190,7 @@ function Landingpage() {
               </div>
               <div className="col-md-3 my-3">
                 <Card style={{ width: '100%',backgroundColor:"whitesmoke" }}>
-                  <Card.Img variant="top" src='../images/c7.jpg' />
+                  <Card.Img variant="top" src={c7} />
                   <Card.Body>
                     <Card.Text className='text-light fw-bolder text-center'>
                       NEW CHICKEN ROLLS
@@ -188,7 +200,7 @@ function Landingpage() {
               </div>
               <div className="col-md-3 my-3">
                 <Card style={{ width: '100%',backgroundColor:"whitesmoke" }}  >
-                  <Card.Img variant="top" src='../images/c8.png' height={'162px'}  className='p-4'/>
+                  <Card.Img variant="top" src={c8} height={'162px'}  className='p-4'/>
                   <Card.Body>
                    <Card.Text className='text-light text-center'>
                       <p>View All Menus <FontAwesomeIcon icon={faArrowRightLong} className='me-2' /></p>
@@ -205,7 +217,7 @@ function Landingpage() {
         <div className="row">  
           <div className="col-md-1"></div>
           <div className="col-md-11">
-            <img src='./images/line.png' alt="" width={'80px'} height={'60px'} className='ps-md-4'/>
+            <img src={line1} alt="" width={'80px'} height={'60px'} className='ps-md-4'/>
             <div className='d-flex justify-content-between py-5 pe-md-5 me-md-5'>
               <h4 className='pe-5 ps-md-4' style={{color:"white"}}>EXCLUSIVE OFFERS FOR YOU</h4>
               <p className='me-md-5'>View All Menus <FontAwesomeIcon icon={faArrowRightLong} className='ms-2' /></p>
@@ -214,7 +226,7 @@ function Landingpage() {
               <Slider {...settings} style={{color:"white"}} className=''>
                 <div className=''>
                       <Card style={{ width: '20rem',backgroundColor:"white",height:"450px" }}>
-                        <Card.Img variant="top" src="../images/f1.jpg" height={'250px'}/>
+                        <Card.Img variant="top" src={f1} height={'250px'}/>
                         <Card.Body>
                           <h4 className='text-center text-danger fw-bold fs-4'>FREE CHICKEN...</h4>
                           <Card.Text style={{fontSize:"13px",color:"black"}}>
@@ -230,7 +242,7 @@ function Landingpage() {
                 </div>
                 <div className=''>
                       <Card style={{ width: '20rem',backgroundColor:"white",height:"450px" }} >
-                        <Card.Img variant="top" src="../images/f2.jpg" height={'250px'}/>
+                        <Card.Img variant="top" src={f2} height={'250px'}/>
                         <Card.Body>
                           <h4 className='text-center text-danger fw-bold fs-4'>UPTO RS 100 OFF</h4>
                           <Card.Text style={{fontSize:"13px",color:"black"}}>
@@ -246,7 +258,7 @@ function Landingpage() {
                 </div>
                 <div className=''>
                       <Card style={{ width: '20rem',backgroundColor:"white",height:"450px" }} >
-                        <Card.Img variant="top" src="../images/f3.jpg" height={'250px'}/>
+                        <Card.Img variant="top" src={f3} height={'250px'}/>
                         <Card.Body>
                           <h4 className='text-center text-danger fw-bold fs-4'>ADD 2 PC HOT N..</h4>
                           <Card.Text style={{fontSize:"13px",color:"black"}}>
@@ -262,7 +274,7 @@ function Landingpage() {
                 </div>
                 <div className=''>
                       <Card style={{ width: '20rem',backgroundColor:"white",height:"450px" }}>
-                        <Card.Img variant="top" src="../images/f4.jpg" height={'250px'}/>
+                        <Card.Img variant="top" src={f4} height={'250px'}/>
                         <Card.Body>
                           <h4 className='text-center text-danger fw-bold fs-4'>UPTO RS 100 OFF</h4>
                           <Card.Text style={{fontSize:"13px",color:"black"}}>

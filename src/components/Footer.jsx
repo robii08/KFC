@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import{faLocationDot} from '@fortawesome/free-solid-svg-icons'
 import{faInstagram,faFacebook,faTwitter} from '@fortawesome/free-brands-svg-icons'
-
+import footlogo from "../images/footerlogo.png"
+import play from "../images/plays.png"
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
       <div className='container-fluid pt-5 bg-light'>
         <div className="row pt-5">
           <div className="col-md-2 d-flex justify-content-center pe-5 pe-md-0">
-            <div className='pt-4'><img src="./images/footerlogo.png" alt="" width={'120px'} height={'60px'} /></div>
+            <div className='pt-4'><img src={footlogo} alt="" width={'120px'} height={'60px'} /></div>
           </div>
           <div className="col-md-1 d-flex justify-content-center">
             <div className='pt-4'>
@@ -57,7 +58,7 @@ function Footer() {
           </div>
           <div className="col-md-4 d-flex justify-content-center">
             <div className='pt-4 bg-light'>
-              <img src="./images/plays.png" alt="" width={'270px'} height={'40px'}/>
+              <img src={play} alt="" width={'270px'} height={'40px'}/>
             </div>
           </div>
         </div>
